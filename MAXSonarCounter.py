@@ -126,7 +126,11 @@ while True:
                 if (ReadDistance <=30):
                     Count = Count + 1
                     if (Count % 2 == 0):
-                        #print(Count/2, " people have passed")
-                        esp.write(str(Count/2))
-                        esp.write('\n')
+                        print(Count/2, " people have passed")
+                        
+                        ################################
+                        #Send Via UART
+                        #esp.write(str(Count/2))
+                        #esp.write('\n')
+                        ################################
                     utime.sleep(1)
